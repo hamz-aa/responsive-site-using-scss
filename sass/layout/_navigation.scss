@@ -1,0 +1,49 @@
+.navigation {
+  &-checkbox {
+    display: none;
+  }
+
+  &-button {
+    background-color: $color-white;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    border-radius: 50%;
+    z-index: 10;
+    text-align: center;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
+  }
+
+  &-background {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  &-nav {
+  }
+
+  &-list {
+  }
+
+  &-item {
+  }
+
+  &-link {
+    &:link,
+    &:visited {
+    }
+  }
+}
